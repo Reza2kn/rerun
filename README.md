@@ -5,10 +5,18 @@ physics scene into [Rerun](https://rerun.io): link transforms, cameras (RGB + de
 reprojected point clouds), contact forces, IMU, tactile, and lidar — plus static visual
 meshes — with one setup call and one call per step.
 
+![A Genesis scene the bridge logs](docs/genesis_kitchen_hero.png)
+
+*A Genesis simulation — a Franka Panda, a green glass bottle, and a bowl of oranges in a
+photoreal kitchen, raytraced. `genesis_rerun` streams scenes like this into Rerun: every
+link transform, camera, and sensor, one call per step.*
+
+…and the same kind of recording, live in the Rerun viewer:
+
 ![The bridge in the Rerun viewer](docs/genesis_rerun_viewer.png)
 
-*A Genesis Franka scene logged through the bridge: the 3D view, two camera RGB streams, and
-bottle/joint time series, all under shared `sim_step` / `sim_time` timelines.*
+*Logged through the bridge: the 3D scene, two camera RGB streams, and bottle/joint time
+series, all under shared `sim_step` / `sim_time` timelines.*
 
 ## Why it exists
 
